@@ -1,0 +1,8 @@
+Tabelas no ficheiro atelier.sql
+
+Abrir na pasta loja
+
+As credenciais para a webstore são 
+user: admin
+pass: bruno1234
+
