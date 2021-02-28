@@ -1,51 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Atelier da Branca</title>
-        <!-- Bootstrap -->
-	    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-	    <link href="css/yosemite.css" rel="stylesheet" type="text/css">
-    </head>
-    <!-- Body code goes here -->
-    <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-custom">
-            <a href="#"class="navbar-brand">Atelier da Branca</a>
-            <img class="navbar-brand" src="images (1).jpg"> 
-            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarPrim" 
-            aria-controls="navbarPrim" aria-expanded="false" aria-label="Menu Navegação">
-            <span class="navbar-toggle-icon"></span>
-            </button>
-            <div id="navbarPrim" class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a href="#" class="nav-link">Home </a></li>
-                    <li class="nav-item"><a href="getting.html" class="nav-link">Getting There </a></li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" 
-                        aria-haspopup="true" aria-expanded="false">Produtos </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" href="#">Tintas </a>
-                            <a class="dropdown-item" href="#">Pincéis </a>
-                            <a class="dropdown-item" href="#">Guardanapos </a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" 
-                        aria-haspopup="true" aria-expanded="false">Actividades </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <a class="dropdown-item" href="#">Aulas </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-3.2.1.min.js"></script>
+<html lang="pt-PT">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Loja</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    rel="stylesheet">
+    <link href="app/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- o conteudo da div vai ser alterado em funcao da paginas onde nos encontrasmos-->
+    <div id="app"></div>
+    <div class="container">
+        <div class="page-header">
+            <h1 id="page-title">Loja na Internet</h1>
+        </div>
+        <div id="page-content">
+        </div>
+    </div>
+    <!-- javascript-->
+    <script src="app/assets/js/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app/assets/js/bootbox.min.js"></script>
+    <script src="app/app.js"></script>
 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/popper.min.js"></script> 
-	<script src="js/bootstrap-4.0.0.js"></script>
-    </body>
+    <!-- scripts para categorias-->
+    <script src="app/categories/categories.js"></script>
+    <script src="app/categories/read-categories.js"></script>
+    <script src="app/categories/create-category.js"></script>
+    <script src="app/categories/read_one_category.js"></script>
+    <script src="app/categories/update-category.js"></script>
+    <script src="app/categories/delete-category.js"></script>
+    <script src="app/categories/search-categories.js"></script>
+
+     <!-- scripts para produtos-->
+     <script src="app/products/products.js"></script>
+     <script src="app/products/read-products.js"></script>
+     <script src="app/products/create-product.js"></script>
+     <script src="app/products/read-one-product.js"></script>
+     <script src="app/products/update-product.js"></script>
+     <script src="app/products/delete-product.js"></script>
+</body>
 </html>
